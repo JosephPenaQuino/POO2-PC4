@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/David Lazo/CLionProjects/SobreCagaOperadoresMulti/Matriz.cpp
+Matriz.h
+C:/Users/David Lazo/CLionProjects/SobreCagaOperadoresMulti/Matriz.h
+
+C:/Users/David Lazo/CLionProjects/SobreCagaOperadoresMulti/Matriz.h
+Matriz.h
+C:/Users/David Lazo/CLionProjects/SobreCagaOperadoresMulti/Matriz.h
+iostream
+-
+
+C:/Users/David Lazo/CLionProjects/SobreCagaOperadoresMulti/main.cpp
+iostream
+-
+Matriz.h
+C:/Users/David Lazo/CLionProjects/SobreCagaOperadoresMulti/Matriz.h
+
