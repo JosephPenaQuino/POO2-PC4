@@ -34,7 +34,6 @@ SCENARIO("Matrix multiplication Comparison between Concurrent and Non-concurrent
             rows_2 = 10;
             columns_2 = 10;
 
-            std::cout << rows_1 << columns_1 << rows_2 << columns_2 << std::endl;
             // TODO: Set size on both matrices
             CMatrix matrix_1(rows_1, columns_1);
             CMatrix matrix_2(rows_2, columns_2);
