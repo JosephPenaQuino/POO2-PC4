@@ -4,6 +4,13 @@
 
 class CMatrix
 {
+private:
+    int ** matrix;
+    int rows;
+    int columns;
+
+public:
+    CMatrix(int rows, int columns);
 
 };
 
