@@ -2,9 +2,9 @@
 #include "main.h"
 #include <iostream>
 
-SCENARIO("")
+SCENARIO("Matrix multiplication Comparison between Concurrent and Non-concurrent")
 {
-    GIVEN("")
+    GIVEN("Concurrent Algorithm")
     {
         WHEN("")
         {
