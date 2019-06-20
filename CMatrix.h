@@ -10,6 +10,7 @@ private:
     int columns;
 
 public:
+<<<<<<< HEAD
     CMatrix(const CMatrix &m)
     {
         *this = m;
@@ -25,6 +26,10 @@ public:
         }
     }
 
+=======
+    CMatrix(int rows, int columns);
+    CMatrix operator * (const CMatrix & matrix2);
+>>>>>>> 27a18fb6987d94d1e9dd2f98acf0160b5a12eb26
 };
 
 
