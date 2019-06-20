@@ -11,7 +11,7 @@ private:
 
 public:
     CMatrix(int rows, int columns);
-
+    CMatrix operator * (const CMatrix & matrix2);
 };
 
 
