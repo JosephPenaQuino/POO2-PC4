@@ -13,11 +13,7 @@ private:
 public:
 
     CMatrix(const CMatrix &m);
-
     CMatrix(int rows , int cols);
-
-    CMatrix operator * (const CMatrix & matrix2);
-
     void print_values();
 
 };
