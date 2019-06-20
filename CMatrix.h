@@ -9,12 +9,16 @@ private:
     int rows;
     int columns;
     void get_line();
+    friend class product();
 
 public:
 
     CMatrix(const CMatrix &m);
     CMatrix(int rows , int cols);
+    void fill_random();
     void print_values();
+    void delete_values();
+    void fill();
 
 };
 
