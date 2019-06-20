@@ -4,4 +4,5 @@
 #include <iostream>
 #include "CMatrix.h"
 #include "Matriz.h"
+#include <thread>
 #endif

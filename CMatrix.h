@@ -5,13 +5,12 @@
 class CMatrix
 {
 private:
-    int ** matrix;
-    int rows;
-    int columns;
+
+    void get_line();
 
 public:
-    CMatrix(int rows, int columns);
     CMatrix operator * (const CMatrix & matrix2);
+    void print_values();
 };
 
 
