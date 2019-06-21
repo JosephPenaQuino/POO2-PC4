@@ -18,7 +18,7 @@ SCENARIO("Matrix multiplication Comparison between Concurrent and Non-concurrent
 //            std::cin >> rows_1 >> columns_1;
 //            std::cout << "Insert Rows and columns of the second matrix";
 //            std::cin >> rows_2 >> columns_2;
-            rows_1 = 10;
+            rows_1 = 22;
             columns_1 = 10;
             rows_2 = 10;
             columns_2 = 10;
