@@ -14,10 +14,8 @@ CMatrix::CMatrix(const CMatrix &m)
     *this = m;
 }
 
-CMatrix::CMatrix(int rows , int cols)
+CMatrix::CMatrix(int rows , int cols) : rows{rows}, columns{cols}
 {
-    this ->columns = cols;
-    this ->rows = rows;
     matrix = new int*[rows];
 
     for (int i = 0; i < rows; i++)
