@@ -18,7 +18,6 @@ public:
     void fill_random();
     void print_values();
     void delete_values();
-    void fill();
 
 };
 
