@@ -28,7 +28,6 @@ void CMatrix::get_line()
 }
 
 
-
 // TODO: Implement print_values
 void CMatrix::print_values()
 {
@@ -58,7 +57,22 @@ void CMatrix::fill_random() {
     random_device rd;
     for (auto i = 0; i < rows; i++)
         for (auto j = 0; j < columns; j++)
-            matrix[i][j] = static_cast<int>(rd()%10);
+            matrix[i][j] = static_cast<int>(rd()%3 +1);
+}
+
+CMatrix CMatrix::operator*(const CMatrix &m)
+{
+    CMatrix new_matrix(5, 5);
+    for (int i = 0; i < 5; ++i)
+        for (int j = 0;  j < 5; ++j)
+            new_matrix.set_value(i, j, this->matrix[i][j] * m.matrix[i][j]);
+    return new_matrix;
+}
+
+void CMatrix::set_value(int i, int j, int new_value)
+{
+    if (i < rows && j < columns)
+        matrix[i][j] = new_value;
 }
 
 

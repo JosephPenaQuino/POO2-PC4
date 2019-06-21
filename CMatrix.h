@@ -9,7 +9,6 @@ private:
     int rows;
     int columns;
     void get_line();
-    friend class product();
 
 public:
 
@@ -19,6 +18,10 @@ public:
     void print_values();
     void delete_values();
 
+    void set_value(int i, int j, int new_value);
+
+    friend CMatrix operator * (const CMatrix& m);
+    CMatrix operator * (const CMatrix& m);
 };
 
 
