@@ -59,7 +59,7 @@ Se realizó una tabla comparativa donde se muestra la diferencia de tiempos con 
 Cabe resaltar que estos resultados fueron obtenidos mediante un TDD(Test Driven Development),
 haciendo uso de su arquitectura para el optimo desarrollo del analisis.
 
-##Analisis de resultados
+## Analisis de resultados
 
 La implementacion de la multiplicacion no concurrente, genero un costo computacional mas alto,
 esto dado a que ocupa un mayor espacio en la memoria por sus largos procesos iterativos.
