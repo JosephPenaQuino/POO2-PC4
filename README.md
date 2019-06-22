@@ -5,6 +5,7 @@
 - JOSEPH PEÑA AQUINO
 - ALEJANDRO MAMANI ANDIA
 - DAVID LAZO PAMPA
+
 En el presente se redactará acerca del análisis de una multiplicación de matrices,
 implementado de forma concurrente y no concurrente.
 
