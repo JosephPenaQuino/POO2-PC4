@@ -18,8 +18,8 @@ SCENARIO("Matrix multiplication Comparison between Concurrent and Non-concurrent
             rows_2 = 10;
             columns_2 = 10;
             // TODO: Set size on both matrices
-            Matrix matrix_1(rows_1, columns_1);
-            Matrix matrix_2(rows_2, columns_2);
+//            Matrix matrix_1(rows_1, columns_1);
+//            Matrix matrix_2(rows_2, columns_2);
 
             THEN("Multiply both matrices")
             {
@@ -38,10 +38,10 @@ SCENARIO("Matrix multiplication Comparison between Concurrent and Non-concurrent
 //            std::cin >> rows_1 >> columns_1;
 //            std::cout << "Insert Rows and columns of the second matrix";
 //            std::cin >> rows_2 >> columns_2;
-            rows_1 = 5;
-            columns_1 = 5;
-            rows_2 = 5;
-            columns_2 = 5;
+            rows_1 = 2;
+            columns_1 = 2;
+            rows_2 = 2;
+            columns_2 = 2;
 
             CMatrix matrix_1(rows_1, columns_1);
             CMatrix matrix_2(rows_2, columns_2);
@@ -59,5 +59,4 @@ SCENARIO("Matrix multiplication Comparison between Concurrent and Non-concurrent
             }
         }
     }
-
 }
