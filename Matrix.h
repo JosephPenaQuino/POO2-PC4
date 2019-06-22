@@ -6,6 +6,7 @@
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
+#include <random>
 
 using namespace std;
 
@@ -45,15 +46,15 @@ public:
 
     }
 
-    Matrix<T> operator* (const Matrix &matrix_2)
+    Matrix<T> operator* (const Matrix &matrix)
     {
-        Matrix matrix_result(m_rows, matrix_2.m_cols);
+        Matrix matrix_result(m_rows, matrix.m_cols);
         T total = T();
 
         for (int i = 0; i < m_rows; i++) {
-            for (int j = 0; j < matrix_2.m_cols; j++) {
+            for (int j = 0; j < matrix.m_cols; j++) {
                 for (int k = 0; k < m_cols; k++) {
-                    total += (m_matrix[i][k] * matrix_2.m_matrix[k][j]);
+                    total += (m_matrix[i][k] * matrix.m_matrix[k][j]);
                 }
                 matrix_result.m_matrix[i][j] = total;
 
@@ -65,9 +66,11 @@ public:
 
     void fill_random()
     {
-        for (int i = 0; i < m_rows; i++) {
-            for (int j = 0; j < m_cols; j++) {
-                m_matrix[i][j] = rand() % 10;
+        int i, j;
+        random_device rd;
+        for(i=0; i<m_rows; i++){
+            for(j=0; j<m_cols; j++){
+                m_matrix[i][j] = static_cast<int>(rd()%10);
             }
         }
     }

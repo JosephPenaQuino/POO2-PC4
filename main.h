@@ -6,6 +6,8 @@
 #include "Matrix.h"
 #include <thread>
 #include <chrono>
+#include "Matrix_2.h"
+
 
 #include "catch.hpp"
 
