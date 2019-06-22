@@ -5,7 +5,7 @@
 - JOSEPH PEÑA AQUINO
 - ALEJANDRO MAMANI ANDIA
 - DAVID LAZO PAMPA
-
+## Introduccion 
 En el presente se redactará acerca del análisis de una multiplicación de matrices,
 implementado de forma concurrente y no concurrente.
 
@@ -47,6 +47,7 @@ Se utilizó el algoritmo tradicional concurrente de multiplicación de matrices
 ## Resultados
 
 Se realizó una tabla comparativa donde se muestra la diferencia de tiempos con distintos tamaños de matrices:
+TABLA 1. Tiempos de procesos. *Haciendo uso de <chrono>.
 
 | Tamaño de Matriz | Concurrente (s) | No Concurrente (s) |
 | ---------------- | --------------- | ------------------ |
@@ -55,6 +56,7 @@ Se realizó una tabla comparativa donde se muestra la diferencia de tiempos con 
 | 200 x 200        | 0.684551        | 0.0090234          |
 | 500 x 500        | 0.849845        | 0.0177737          |
 | 600 x 600        | 1.134530        | 0.0214564          |
+
 
 Cabe resaltar que estos resultados fueron obtenidos mediante un TDD(Test Driven Development),
 haciendo uso de su arquitectura para el optimo desarrollo del analisis.
@@ -68,10 +70,13 @@ El costo computacional redujo en porcentajes altisimos, al usar programacion con
 esto se refleja en la tabla 1.
 
 
-
 ## Conclusiones
+
 En este caso especifico, el proceso de multiplicar matrices, es mas eficiente hacer uso de programacion
 concurrente, mediante el uso de threads, dado que sugiere una menor complejidad computacional para el usuario.
+
+Se sugiere implementar metodos no concurrentes que no hagan muchas iteraciones pues es esto lo que genera el 
+incremento de la complejidad computacional.
 
 
 
