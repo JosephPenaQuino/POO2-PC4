@@ -5,6 +5,7 @@
 #include "CMatrix.h"
 #include "Matrix.h"
 #include <thread>
+#include <chrono>
 
 #include "catch.hpp"
 
