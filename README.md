@@ -47,7 +47,7 @@ Se utilizó el algoritmo tradicional concurrente de multiplicación de matrices
 ## Resultados
 
 Se realizó una tabla comparativa donde se muestra la diferencia de tiempos con distintos tamaños de matrices:
-TABLA 1. Tiempos de procesos. *Haciendo uso de <chrono>.
+TABLA 1. Tiempos de procesos. *Haciendo uso de chrono library.
 
 | Tamaño de Matriz | Concurrente (s) | No Concurrente (s) |
 | ---------------- | --------------- | ------------------ |
