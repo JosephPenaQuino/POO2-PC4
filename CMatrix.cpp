@@ -58,25 +58,22 @@ void CMatrix::fill_random() {
 
 CMatrix CMatrix::operator*(CMatrix &m)
 {
-    CMatrix new_matrix(2, 2);
-//    std::vector<std::thread> my_threads(4);
-//
-//    for (auto & current_thread : my_threads)
-//        current_thread = std::thread
-//    new_matrix.multiply(0, 0, this->row(0), m.column(0));
-//    new_matrix.multiply(0, 1, this->row(0), m.column(1));
-//    new_matrix.multiply(1, 0, this->row(1), m.column(0));
-//    new_matrix.multiply(1, 1, this->row(1), m.column(1));
+    CMatrix new_matrix(this->rows, m.columns);
+    std::vector<std::thread> my_threads(this->columns * m.rows);
 
-    std::thread t1{&CMatrix::multiply,new_matrix, 0, 0, this->row(0), m.column(0)};
-    std::thread t2{&CMatrix::multiply,new_matrix, 0, 1, this->row(0), m.column(1)};
-    std::thread t3{&CMatrix::multiply,new_matrix, 1, 0, this->row(1), m.column(0)};
-    std::thread t4{&CMatrix::multiply,new_matrix, 1, 1, this->row(1), m.column(1)};
+    auto current_thread = my_threads.begin();
+    for (int i = 0; i < this->rows; ++i)
+    {
+        for (int j = 0; j < m.columns; ++j)
+        {
+            (*current_thread) = std::thread(&CMatrix::multiply, new_matrix, i, j, this->row(i), m.column(j));
+            current_thread++;
+        }
+    }
 
-    t1.join();
-    t2.join();
-    t3.join();
-    t4.join();
+    for (auto& current_threads: my_threads)
+        current_threads.join();
+
     return new_matrix;
 }
 

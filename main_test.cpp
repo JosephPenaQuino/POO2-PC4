@@ -51,6 +51,7 @@ SCENARIO("Matrix multiplication Comparison between Concurrent and Non-concurrent
 
             matrix_1.print_values();
             matrix_2.print_values();
+
             THEN("Multiply both matrices")
             {
                 CMatrix matrix_3(matrix_1 * matrix_2);
