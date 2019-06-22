@@ -1,10 +1,5 @@
-#include "catch.hpp"
 #include "main.h"
-#include <iostream>
-#include "Matrix.h"
-#include "CMatrix.h"
-#include "Matrix.cpp"
-#include "CMatrix.cpp"
+
 
 SCENARIO("Matrix multiplication Comparison between Concurrent and Non-concurrent")
 {

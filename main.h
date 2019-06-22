@@ -3,6 +3,13 @@
 
 #include <iostream>
 #include "CMatrix.h"
-#include "Matriz.h"
+#include "CMatrix.cpp"
+
+#include "Matrix.h"
+#include "Matrix.cpp"
+
 #include <thread>
+
+#include "catch.hpp"
+
 #endif
